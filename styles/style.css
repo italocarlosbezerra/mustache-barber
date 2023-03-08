@@ -46,8 +46,13 @@ nav a {
   display: block;
   text-align: center;
   text-decoration: none;
-
   color: var(--black-brown);
+}
+
+.banner {
+  background-image: url(../images/barber-small.png);
+  width: 100vw;
+  height: 400px;
 }
 
 main {
@@ -119,8 +124,9 @@ main {
 }
 
 .services {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 300px;
+  margin-bottom: 10px;
 }
 
 .services p:first-child {
@@ -135,7 +141,6 @@ main {
 
 .services p {
   text-align: center;
-  padding-top: 10px;
 }
 
 .services-list {
@@ -143,13 +148,14 @@ main {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--dark-brown);
+  font-family: var(--lilita);
   border-radius: 10px;
   margin-top: 10px;
 }
 
 .services-list p {
   text-align: center;
-  font-size: var(--lilita);
+
   color: var(--mustard);
 }
 
@@ -171,10 +177,19 @@ main {
   padding-top: 10px;
 }
 
+.schedule p:first-child,
+.services p:first-child {
+  font-size: 18px;
+}
+
+.schedule p:last-child,
+.services p:last-child {
+  font-size: 13px;
+}
+
 .schedule p:first-child {
   font-family: var(--lilita);
   color: var(--black-brown);
-  padding-bottom: 10px;
 }
 
 .schedule p:nth-child(2) {
@@ -259,6 +274,7 @@ main {
 
 .schedule-container a {
   width: 200px;
+  font-family: var(--lato);
   background-color: var(--cream);
   color: var(--dark-brown);
   text-align: center;
@@ -268,20 +284,277 @@ main {
   margin-top: 10px;
 }
 
+.location {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--lato);
+  text-align: center;
+}
+
+.location p:first-child {
+  font-family: var(--lilita);
+  color: var(--dark-brown);
+  font-size: 18px;
+}
+
+.location p:last-child {
+  color: var(--black-brown-opacity);
+  font-size: 13px;
+}
+
+.location-text {
+  margin-bottom: 10px;
+}
+
+.google-maps iframe {
+  width: 320px;
+  height: 320px;
+  border: 0;
+}
+
+footer {
+  margin-top: 25px;
+  font-family: var(--inter);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-text {
+  margin-top: 5px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+  }
+
+  nav {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+  }
+
+  .banner {
+    background-image: url(../images/barber-large.png);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .barber-desc {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    padding: 15px 0 15px 0;
+  }
+
+  .barber-desc-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .barber-text {
+    margin-left: 8px;
+  }
+
+  .barber-text p:first-child {
+    font-size: 20px;
+  }
+
+  .barber-text p:last-child {
+    padding-top: 0px;
+    font-size: 15px;
+  }
+
+  .barber-text p {
+    text-align: left;
+  }
+
+  .services {
+    margin-top: 30px;
+    width: 800px;
+  }
+
+  .services p {
+    text-align: left;
+  }
+
+  .services p:first-child {
+    font-size: 32px;
+  }
+
+  .services p:last-child {
+    font-size: 16px;
+  }
+
+  .services-list {
+    width: 800px;
+  }
+
+  .services-list p {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .schedule {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 800px;
+    text-align: left;
+  }
+
+  .schedule p:first-child {
+    font-size: 32px;
+  }
+
+  .schedule p:last-child {
+    font-size: 16px;
+  }
+
+  .name {
+    width: 250px;
+  }
+
+  .price {
+    width: 80px;
+  }
+
+  .service-type {
+    font-size: 20px;
+  }
+
+  .operating-hours {
+    width: 800px;
+    flex-direction: row;
+  }
+
+  .hours {
+    padding: 20px;
+    width: 500px;
+  }
+
+  .hours p:first-child {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .hours p:nth-child(2),
+  .hours p:nth-child(3) {
+    font-size: 16px;
+  }
+
+  .instagram {
+    margin-left: 15px;
+  }
+
+  .instagram p:first-child {
+    font-size: 14px;
+  }
+
+  .instagram p:last-child {
+    font-size: 28px;
+  }
+
+  .schedule-container {
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .text p:first-child,
+  .text p:last-child {
+    text-align: left;
+  }
+
+  .text p:first-child {
+    font-size: 25px;
+  }
+
+  .text p:last-child {
+    font-size: 14px;
+  }
+
+  .text-desc {
+    width: 400px;
+  }
+
+  .schedule-container a {
+    font-size: 18px;
+  }
+
+  .location {
+    margin-top: 70px;
+  }
+
+  .location-text p:first-child {
+    font-size: 32px;
+  }
+
+  .location-text p:last-child {
+    font-size: 16px;
+  }
+
+  .footer-menu a {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer-menu hr {
+    margin-top: 10px;
+  }
+
+  .google-maps iframe {
+    width: 100vw;
+  }
+
+  nav a:hover {
+    border-bottom: 1px solid black;
+  }
+
+  .schedule-container a:hover {
+    background-color: white;
+  }
+}
+
 @media only screen and (max-width: 426px) {
-  .banner img {
+  .google-maps iframe {
     width: 425px;
   }
 }
 
 @media only screen and (max-width: 376px) {
-  .banner img {
+  .google-maps iframe {
     width: 375px;
   }
 }
 
 @media only screen and (max-width: 321px) {
   .banner img {
+    width: 320px;
+  }
+
+  .google-maps iframe {
     width: 320px;
   }
 }

@@ -21,17 +21,13 @@
         <img src="images/mustache.svg" />
         <div class="logo-text">MUSTACHE BARBER</div>
       </div>
-      <div class="teste">
-        <nav>
-          <a href="#">HOME</a>
-          <a href="#">SERVIÇOS</a>
-          <a href="#">AGENDAMENTO</a>
-        </nav>
-      </div>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#services">SERVIÇOS</a>
+        <a href="#schedule">AGENDAMENTO</a>
+      </nav>
     </header>
-    <section class="banner">
-      <img src="images/barber-small.png" alt="" />
-    </section>
+    <section class="banner"></section>
     <main>
       <section class="barber-desc">
         <div class="barber-desc-container">
@@ -65,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <p>NOSSOS SERVIÇOS</p>
         <p>Aproveite todos os nossos serviços, e desfrute de uma experiência única de cuidados pessoais.</p>
       </section>
@@ -112,15 +108,15 @@
           <div class="price">R$19,99</div>
         </div>
       </section>
-      <section class="schedule">
+      <section id="schedule" class="schedule">
         <p>AGENDAMENTOS</p>
         <p>Marque um horário com a gente.</p>
       </section>
       <section class="operating-hours">
         <div class="hours">
           <p>HORÁRIO DE FUNCIONAMENTO</p>
-          <p>Segunda-feira a sexta-feira: 08h00 - 17h00</p>
-          <p>Sábado a Domingo: 13h00 - 17h00</p>
+          <p><strong>Segunda-feira a sexta-feira: 08h00 - 17h00</strong></p>
+          <p><strong>Sábado a Domingo: 13h00 - 17h00</strong></p>
         </div>
         <div class="instagram">
           <p>Não esqueça de marcar a gente no Instagram:</p>
@@ -130,13 +126,38 @@
       <section class="schedule-container">
         <div class="text">
           <p>FAÇA O SEU AGENDAMENTO PELO WHATSAPP</p>
-          <p>
-            Venha conhecer a nossa barbearia, onde você vai encontrar uma atmosfera acolhedora e com profissionais
-            experientes.
-          </p>
+          <div class="text-desc">
+            <p>
+              Venha conhecer a nossa barbearia, onde você vai encontrar uma atmosfera acolhedora e com profissionais
+              experientes.
+            </p>
+          </div>
         </div>
         <a href="#"> AGENDAR </a>
       </section>
+      <section id="location" class="location">
+        <div class="location-text">
+          <p>ONDE FICA A NOSSA LOCALIZAÇÃO</p>
+          <p>Estaremos de portas abertas para te receber.</p>
+        </div>
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.0254256281253!2d-35.95352707081876!3d-8.292676999627112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98a517933ab7f%3A0x202f83f56de5fe07!2sAv.%20Adjar%20da%20Silva%20Cas%C3%A9%2C%2065%20-%20Indianapolis%2C%20Caruaru%20-%20PE%2C%2055024-740!5e0!3m2!1sen!2sbr!4v1678275454584!5m2!1sen!2sbr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-menu">
+        <a href="#">HOME</a>
+        <a href="#services">SERVIÇOS</a>
+        <a href="#schedule">AGENDAMENTO</a>
+        <hr />
+      </div>
+      <div class="footer-text"><strong>2023 © MUSTACHEBARBER</strong>. Todos os direitos reservados.</div>
+    </footer>
   </body>
 </html>
