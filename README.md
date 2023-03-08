@@ -7,7 +7,7 @@ Esse projeto teve como objetivo a criação de uma landing page para uma barbear
 <br>
 
 <p align="center">
-  <a href="#"> PREVIEW DA PÁGINA CRIADA </a>
+  <a href="https://mustache-barber-comeia.netlify.app/"> PREVIEW DA PÁGINA CRIADA </a>
 </p>
 
 <p align="center">
